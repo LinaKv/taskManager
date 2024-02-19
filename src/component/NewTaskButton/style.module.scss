@@ -1,0 +1,17 @@
+@import '../../variables';
+@import '../../mixin';
+
+.newTaskButton {
+    background: $pinkColor;
+    color: $lightColor;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 15vw;
+    min-width: 200px;
+
+    @include for-phone-only {
+        width: 90vw;
+    }
+}

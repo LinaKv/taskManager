@@ -1,0 +1,50 @@
+@import '../../variables';
+.taskWrapper {
+    min-width: 250px;
+    min-height: 176px;
+    border: 1px solid $mainDarkColor;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: $mainLightColor;
+
+    p {
+        color: $grayText;
+        margin: 0;
+        padding: 0;
+    }
+
+    .taskHeader {
+        display: flex;
+        gap: 10px;
+        position: relative;
+
+        .taskNumber {
+            font-weight: bold;
+            color: $mainDarkColor;
+        }
+
+        .taskName {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            width: 200px;
+            height: 50px;
+            overflow: hidden;
+            text-align: start;
+        }
+    }
+
+    .taskAuthor,
+    .deadlineWrapper,
+    .statusWrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

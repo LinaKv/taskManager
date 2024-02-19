@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.columnWrapper {
+    min-height: 70vh;
+    min-width: 300px;
+    background: $lightColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 20px;
+
+    .columnHeader {
+        text-transform: uppercase;
+    }
+
+    .columnContainer {
+        flex-grow: 2;
+        // max-height: 70vh;
+        height: 70vh;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: $lightColor;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $mainDarkColor;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: $pinkText;
+    }
+}
